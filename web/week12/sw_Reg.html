@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    * {padding:0; margin:0;}
+    body { font-family:Verdana, sans-serif; font-size:0.8em}
+    header, nav, section, article, aside, footer {border:1px solid gray; margin:5px; padding:8px}
+    nav ul{margin:0; padding:0;}
+    nav ul li {display:inline; margin:5px}
+    a:link {color:blue; text-decoration:none;}
+    a:visited { color:purple; text-decoration:none;}
+    a:hover { text-decoration:underline;}
+    a:active { color:red; text-decoration:none;}
+    section {height:450px;}
+    .id_form{width:50px;}
+    .label_form{display:inline-block; width:55px; height:14px; color:red;padding:5px;}
+    .button_form {width:60px; margin-left:5px;}
+    .fset{padding:15px;}
+    #dupBtn{height:25px;}
+    ul.level_1 > li {list-style:none; display:inline-block; vertical-align:bottom;}
+    ul.level_1 > li > ul {list-style:none;}
+    .level_2li {padding-top:5px;}
+    .level_2span {display:inline-block; width:70px;}
+    .level_2input {width:100px;}
+    #loginBtn button { margin-left:5px; height:42px;}
+    </style>
+    <title>smart watch search</title>
+</head>
+<body>
+    <header><h2>smart watch search</h2></header>
+    <nav>
+        <ul>
+            <li><a href="./sw_Login.html">로그인</a></li><li><a href="./sw_Reg.html">회원등록</a></li>
+        </ul>
+    </nav>
+    <section> 
+        <form action="./sw_Reg.jsp" method="post">
+            <fieldset class="fset"><legend>회원등록</legend> 
+            <fieldset class="fset"><legend>이름/이메일</legend>
+            <label class="label_form" for="stud_name">이름</label>
+            <input type="text" name="stud_name" size="18" maxlength="50" required/><br>
+            <label id="label_form2" class="label_form" for="stud_email">이메일</label>
+            <input type="text" name="stud_email" size="18" maxlength="50"/><br>
+            <label id="label_form3" class="label_form" for="stud_phone">전화번호</label>
+            <input type="text" name="stud_phone" size="18" maxlength="50"/><br></fieldset>
+            <fieldset class="fset"><legend>아이디/비밀번호</legend>
+            <label class="label_form" for="stud_id">아이디</label>
+            <input type="text" name="stud_id" size="18" maxlength="50" required/>
+            <button id="dupBtn">중복확인</button><br>
+            <label class="label_form" for="stud_passwd">비밀번호</label>
+            <input type="passwd" name="stud_passwd" size="18" maxlength="50" required/><br>
+            </fieldset>
+            <fieldset class="fset"><legend>브랜드</legend>
+            <label for="stud_gender">APPLE</label>
+            <input class="id_form" type="radio" name="stud_gender" value="여자" checked/>
+            <label for="stud_gender">SAMSUNG</label>
+            <input class="id_form" type="radio" name="stud_gender" value="남자" checked/>
+            <label for="stud_gender">LG</label>
+            <input class="id_form" type="radio" name="stud_gender" value="여자" checked/>
+            <label for="stud_gender">NOKIA</label>
+            <input class="id_form" type="radio" name="stud_gender" value="여자" checked/>
+            <label for="stud_gender">MOTOROLA</label>
+            <input class="id_form" type="radio" name="stud_gender" value="여자" checked/>
+            <label for="stud_gender">XIAOMI</label>
+            <input class="id_form" type="radio" name="stud_gender" value="여자" checked/>
+            <label for="stud_gender">HUAWEI</label>
+            <input class="id_form" type="radio" name="stud_gender" value="여자" checked/>
+        </fieldset>
+            <fieldset class="fset"><legend>사이즈</legend>
+            <label for="stud_hobby1">40mm</label>
+            <input class="id_form" type="checkbox" name="stud_hobby" value="낚시"/>
+            <label for="stud_hobby1">42mm</label>
+            <input class="id_form" type="checkbox" name="stud_hobby" value="바둑"/>
+            <label for="stud_hobby1">44mm</label>
+            <input class="id_form" type="checkbox" name="stud_hobby" value="독서"/>
+            </fieldset><br>
+            <fieldset class="fset"><legend>색상</legend>
+                <label for="stud_hobby1">스페이스그레이</label>
+                <input class="id_form" type="checkbox" name="stud_hobby" value="낚시"/>
+                <label for="stud_hobby1">실버</label>
+                <input class="id_form" type="checkbox" name="stud_hobby" value="바둑"/>
+                <label for="stud_hobby1">블랙</label>
+                <input class="id_form" type="checkbox" name="stud_hobby" value="독서"/>
+                </fieldset><br>
+                <fieldset class="fset"><legend>데이터</legend>
+                    <label for="stud_hobby1">Cellular</label>
+                    <input class="id_form" type="checkbox" name="stud_hobby" value="낚시"/>
+                    <label for="stud_hobby1">Wifi</label>
+                    <input class="id_form" type="checkbox" name="stud_hobby" value="바둑"/>
+                    </fieldset><br>
+        
+    
+            <input class="button_form" type="submit" value="회원등록">
+            <input class="button_form" type="reset" value="취소">
+            </fieldset>
+        </form>
+    </section>
+    <footer><p>&copy; 20XX Made by Korea. All rights reserved. </p></footer>
+</body>
+</html>
